@@ -1,0 +1,232 @@
+{
+	"info": {
+		"_postman_id": "5d3c19c7-0c6f-429b-83c3-223d24a107b4",
+		"name": "ReadingIsGood",
+		"description": "Test Requests Collection for ReadingIsGood Project",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "RegisterCustomer",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"address\": {\r\n    \"buildingNumber\": 1,\r\n    \"city\": \"İzmir\",\r\n    \"country\": \"Turkey\",\r\n    \"distinct\": \"Bornova\",\r\n    \"doorNumber\": 14,\r\n    \"postalCode\": 35040,\r\n    \"street\": \"57. Sokak\"\r\n  },\r\n  \"balance\": 1500,\r\n  \"email\": \"alperdogan.92@gmail.com\",\r\n  \"identityNumber\": 1,\r\n  \"name\": \"Alper\",\r\n  \"phoneNumber\": \"05059308909\",\r\n  \"surname\": \"Dogan\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/customers",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"customers"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "FindCustomerById",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/customers/getCustomerOrder/1",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"customers",
+						"getCustomerOrder",
+						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "FindOrdersByDateRange",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/orders/findOrdersDateRange/10-09-2021/15-09-2021",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"orders",
+						"findOrdersDateRange",
+						"10-09-2021",
+						"15-09-2021"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "FindCustomerOrder",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/customers/getCustomerOrder/1",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"customers",
+						"getCustomerOrder",
+						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "RegisterBook",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"author\": \"Yaşar Kemal\",\r\n  \"bookId\": 1,\r\n  \"category\": \"Roman\",\r\n  \"name\": \"İnce Memet\",\r\n  \"price\": 35.0,\r\n  \"stockNumber\": 15\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/books",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"books"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "UpdateBookStock",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"author\": \"Yaşar Kemal\",\r\n  \"bookId\": 1,\r\n  \"category\": \"Roman\",\r\n  \"name\": \"İnce Memet\",\r\n  \"price\": 35.0,\r\n  \"stockNumber\": 15\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/books/updateBook/1/20",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"books",
+						"updateBook",
+						"1",
+						"20"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "FindOrderById",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/orders/1",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"orders",
+						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "newOrder",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"quantity\": 1,\n    \"bookId\": 1\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/orders/newOrder/1",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"orders",
+						"newOrder",
+						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "GetCustomerStatistic",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/statistics/1",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"statistics",
+						"1"
+					]
+				}
+			},
+			"response": []
+		}
+	],
+	"protocolProfileBehavior": {}
+}
