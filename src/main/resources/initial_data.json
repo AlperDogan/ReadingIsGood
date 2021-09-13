@@ -1,0 +1,55 @@
+[{
+  "identityNumber": 1,
+  "name": "Alper",
+  "surname": "Dogan",
+  "email": "alperdogan.92@gmail.com",
+  "phoneNumber": "05059308909",
+  "address": {
+    "country": "Turkey",
+    "city": "İzmir",
+    "distinct": "Bornova",
+    "street": "57. Sokak",
+    "buildingNumber": "1",
+    "doorNumber": "14",
+    "postalCode": "35040"
+  },
+  "balance": "1500",
+  "_class": "com.getir.alperdogan.project.readingisgood.Entity.Customer"
+},
+  {
+    "identityNumber": 2,
+    "name": "Tugba",
+    "surname": "Dogan",
+    "email": "tugba@gmail.com",
+    "phoneNumber": "05059308909",
+    "address": {
+      "country": "Turkey",
+      "city": "İzmir",
+      "distinct": "Bornova",
+      "street": "57. Sokak",
+      "buildingNumber": "1",
+      "doorNumber": "14",
+      "postalCode":"35040"
+    },
+    "balance": "1500",
+    "_class": "com.getir.alperdogan.project.readingisgood.Entity.Customer"
+  },
+  {
+    "bookId": 1,
+    "name": "İnce Memet",
+    "author": "Yaşar Kemal",
+    "category": "Roman",
+    "price": "15.0",
+    "stockNumber": "20",
+    "_class": "com.getir.alperdogan.project.readingisgood.Entity.Book"
+  },
+  {
+    "bookId": 2,
+    "name": "Olasılıksız",
+    "author": "Adam Faver",
+    "category": "Roman",
+    "price": "35.5",
+    "stockNumber": "15",
+    "_class": "com.getir.alperdogan.project.readingisgood.Entity.Book"
+  }
+]
